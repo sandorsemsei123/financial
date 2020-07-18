@@ -12,6 +12,24 @@
 .input-group {
     margin-top: 20px;
 }
+.triangle-up {
+    width:0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(222, 226, 230);
+  }
+  .triangle-inner {
+    position: relative;
+    width:0;
+    height:0;
+    left: -45px;
+    bottom: -5px;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 90px solid rgb(248, 249, 250);
+  }
+
 /**** NAVBAR ****/
 
 .nav {

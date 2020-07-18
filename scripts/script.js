@@ -19,7 +19,7 @@ $('#income-submit-btn').on("click", function() {
     var totalMoney = parseInt(document.getElementById('total-money').innerHTML);
     var finalMoney = totalMoney + inputMoney;
 
-    document.querySelector('#total-money').innerHTML = finalMoney;
+    document.querySelector('#total-money').innerHTML = finalMoney + ' Forint';
 
     $('#income-input').val('');
     $('#income-div').removeClass('d-flex');
