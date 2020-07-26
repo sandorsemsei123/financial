@@ -2,6 +2,9 @@
     margin: 0;
 }
 
+#full-page {
+    height: 80vh;
+}
 .text-align-center {
     text-align: center;
 }
@@ -44,4 +47,26 @@
     width: 25rem;
     margin-top: 2rem;
     position: absolute;
+}
+
+/*** STYLING ***/
+
+.money-div {
+    height: 11rem;
+    margin-top: 2rem;
+}
+#user-name {
+    margin-top: 2rem;
+}
+#savings-btn {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+.btn-danger {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.btn-success {
+    margin-left: 5px;
+    margin-top: 5px;
 }
