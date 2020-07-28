@@ -1,0 +1,29 @@
+GET http://localhost:3000/financial
+
+###
+
+GET http://localhost:3000/financial/5f1d811fc9b55a1d8c811203
+
+###
+
+POST http://localhost:3000/financial
+Content-Type: application/json
+
+{
+    "name": "Sanyi",
+    "subscribedToChannel": "Bármi"
+}
+
+###
+
+DELETE http://localhost:3000/financial/5f1d9bc6f649e402dc54ecc3
+
+###
+
+PATCH http://localhost:3000/financial/5f1d884293e3791ba4c3007f
+Content-Type: application/json
+
+{
+    "name": "Something",
+    "subscribedToChannel": "AMAZING"
+}

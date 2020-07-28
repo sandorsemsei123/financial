@@ -1,6 +1,15 @@
+let name = document.getElementById('user-name');
 
-////////  Income/Expense Div ////////
 
+fetch('http://localhost:3000/financial/')
+.then(res => {
+  if(res.ok) {
+    return res.json();
+  } else {
+    console.log('doesnt work')
+  }
+})
+.then(data => name.innerHTML = data[0].name);
 
 //Toggle Divs
 $('#income-btn').on("click", function() {
@@ -11,7 +20,6 @@ $('#expense-btn').on("click", function() {
     $('#expense-div').toggleClass('d-flex');
     $('#income-div').removeClass('d-flex');
 });
-
 
 //Count/Display money
 $('#income-submit-btn').on("click", function() {
